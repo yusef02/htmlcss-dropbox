@@ -4,3 +4,25 @@
   margin: 0;
   padding: 0;
 }
+
+/* debug */
+* {
+  border: 1px dashed red;
+}
+/* HEADER */
+.hdr {
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  /* debug */
+  min-height: 100px;
+  background-color: lightcoral;
+}
+.hdr--left,
+.hdr--right {
+  display: flex;
+  align-items: center;
+  /* debug */
+  background-color: lightgreen;
+}
