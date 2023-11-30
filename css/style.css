@@ -7,7 +7,22 @@
 
 /* debug */
 * {
-  border: 1px dashed red;
+  border: 1px dashed black;
+}
+
+/* UTILS */
+.container-large {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* debug */
+  min-height: 400px;
+  background-color: lightpink;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: lightpink;
 }
 /* HEADER */
 .hdr {
@@ -15,6 +30,9 @@
 
   display: flex;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
   /* debug */
   min-height: 100px;
   background-color: lightcoral;
@@ -25,4 +43,16 @@
   align-items: center;
   /* debug */
   background-color: lightgreen;
+}
+
+/* JUMBO */
+
+.jumbo .container-large {
+  display: flex;
+}
+.jumbo .container-large .column-small {
+  flex-basis: 30%;
+}
+.jumbo .container-large .column-big {
+  flex-basis: 70%;
 }
