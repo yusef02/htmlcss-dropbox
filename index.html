@@ -5,31 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dropbox</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- per questo lavoro in oltre ho cominciato ad apllicare un po la metodologia bem per abbituarmici un attimo e cominciare a usarla da ora in poi, in quanto avendo rivisto qualche lavoro precedente mi risultava un po confusionario e perchè ho visto in questo metodo tanta organizazione. per questa prima volta e ancora un po' avanti adotterò uno stile misto usando anche modificatori generici e non mirati -->
+    <!-- inoltre ho notato che preferisco lavorare immediatamente ai dettagli, prendendo quindi anche le decisioni per il layout in modo immediato, forse perchè si tratta di un lavoro che da riferimento ad uno screenshot di una pagina con un layout preimpostato e quindi non è necessario stare a inventarsi come disporre i blocchi -->
   </head>
   <body>
     <!-- HEADER BLOCK -->
-    <header class="hdr">
-      <div class="hdr--left">
-        <div class="hdr--left--logo">logo</div>
-        <div class="hdr--left--info">
-          Peschè Dropbox Funzioni Piani e Prezzi
-        </div>
+    <header class="header debug">
+      <div class="header__nav">
+        <a href="#"
+          ><img
+            src="./img/logo-small.png"
+            alt="logo Dropbox"
+            class="header__nav__logo"
+        /></a>
+        <ul class="header__nav__aboutUs">
+          <!-- nota: non ho aggiunto classi item e jumpto o tag ad altre pagine per non complicare troppo il codice in quanto si tratta comunque di un semplice progetto di layout quindi adottero uno stile misto per incominciare -->
+          <li><a href="#">Perchè Dropbox</a></li>
+          <li><a href="#">Funzioni</a></li>
+          <li><a href="#">Piani e Prezzi</a></li>
+        </ul>
       </div>
-      <div class="hdr--right">
-        <div class="hdr--right--contacts">
-          Supporto Contatta l'ufficio vendite
+      <div class="header__nav">
+        <ul class="header__nav__contacts">
+          <li><a href="#">Supporto</a></li>
+          <li><a href="#">Contatta l'ufficio vendite</a></li>
+        </ul>
+        <div class="header__nav__auth">
+          <a href="#" class="btn--primary--white header__nav__auth__btn"
+            >Accedi</a
+          >
+          <a href="#" class="btn--primary--blue header__nav__auth__btn"
+            >Inizia</a
+          >
         </div>
-        <div class="hdr--right--sign">Accedi Inizia</div>
       </div>
     </header>
 
-    <!-- JUMBO -->
+    <!-- 
     <div class="jumbo container-large">
       <div>titolo</div>
-      <div class="container-large">
+      <div class="jumbo-content">
         <div class="column-small"></div>
         <div class="column-big"></div>
       </div>
     </div>
+
+    
+    <main>
+      <section class="sctn-plans">
+        <div class="container">
+          <div class="card column-30"></div>
+          <div class="card column-30"></div>
+          <div class="card column-30"></div>
+          <div class="card w-100"></div>
+        </div>
+      </section>
+
+      <section class="sctn-partner">
+        <div class="container">
+          <div class="column-big"></div>
+          <div class="column-small"></div>
+        </div>
+      </section>
+
+      <section class="sctn-functionality">
+        <div class="container">
+          <div class="fig column-30"></div>
+          <div class="fig column-30"></div>
+          <div class="fig column-30"></div>
+          <div class="fig column-30"></div>
+          <div class="fig column-30"></div>
+          <div class="fig column-30"></div>
+        </div>
+      </section>
+
+      <section class="sctn-business-plan">
+        <div class="container"></div>
+        <div class="companies">
+          <div class="wrapper column-30">
+            <div class="w-50"></div>
+            <div class="w-50"></div>
+            <div class="w-50"></div>
+            <div class="w-50"></div>
+          </div>
+          <div class="column-30"></div>
+          <div class="wrapper column-30">
+            <div class="w-50"></div>
+            <div class="w-50"></div>
+            <div class="w-50"></div>
+            <div class="w-50"></div>
+          </div>
+        </div>
+        <div class="container"></div>
+      </section>
+    </main> -->
   </body>
 </html>

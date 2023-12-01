@@ -1,3 +1,6 @@
+:root {
+  --padding-container: 50px;
+}
 /* RESET */
 * {
   box-sizing: border-box;
@@ -6,53 +9,167 @@
 }
 
 /* debug */
-* {
+.debug, .debug * {
   border: 1px dashed black;
 }
 
+*{
+  font-size: 18px;
+}
+
 /* UTILS */
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+
+.wrapper {
+  font-size: 0;
+}
 .container-large {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 50px 0;
   /* debug */
-  min-height: 400px;
+  /* min-height: 400px; */
   background-color: lightpink;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 50px 0;
+  /* debug */
+  min-height: 400px;
+
   background-color: lightpink;
 }
+
+.column-30 {
+  width: calc(100% / 3);
+}
+
+.btn--primary--blue {
+  padding: 7px 14px;
+  background-color: #0061ff;
+  color: white;
+}
+
+.btn--primary--white {
+  padding: 7px 14px;
+  background-color: white;
+  color: black;
+}
+
 /* HEADER */
-.hdr {
-  padding: 0 20px;
+
+.header {
+  padding: 15px;
 
   display: flex;
   justify-content: space-between;
 
   position: sticky;
   top: 0;
-  /* debug */
-  min-height: 100px;
-  background-color: lightcoral;
 }
-.hdr--left,
-.hdr--right {
+.header__nav{
   display: flex;
+  justify-content: center;
   align-items: center;
-  /* debug */
-  background-color: lightgreen;
+}
+.header__nav__logo{
+  height: 1.3rem;
+}
+.header__nav__aboutUs, .header__nav__contacts{
+  list-style: none;
+  margin: 0 15px;
+}
+.header__nav__aboutUs li, .header__nav__contacts li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.header__nav__aboutUs li > a, .header__nav__contacts li > a{
+  text-decoration: none;
+  color: inherit;
+}
+.header__nav__auth__btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 15px;
 }
 
-/* JUMBO */
+/* 
 
-.jumbo .container-large {
+.jumbo .jumbo-content {
   display: flex;
 }
-.jumbo .container-large .column-small {
+.jumbo .jumbo-content .column-small {
   flex-basis: 30%;
+  min-height: 400px;
+  background-color: lightgrey;
 }
-.jumbo .container-large .column-big {
+.jumbo .jumbo-content .column-big {
   flex-basis: 70%;
+  min-height: 400px;
+  background-color: lightslategrey;
 }
+
+
+
+main .sctn-plans {
+  min-height: 700px;
+  background-color: lightskyblue;
+}
+
+main .sctn-plans .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .sctn-plans .card.column-30 {
+  background-color: blueviolet;
+  min-height: 800px;
+}
+
+main .sctn-plans .card {
+  background-color: tomato;
+  min-height: 300px;
+}
+
+
+main .sctn-partner .container {
+  display: flex;
+}
+main .sctn-partner .container .column-small {
+  flex-basis: 30%;
+  min-height: 400px;
+  background-color: lightgrey;
+}
+main .sctn-partner .container .column-big {
+  flex-basis: 70%;
+  min-height: 400px;
+  background-color: lightslategrey;
+}
+
+main .sctn-functionality .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .sctn-functionality .fig {
+  min-height: 300px;
+  background-color: lightseagreen;
+}
+
+main .sctn-business-plan .companies {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .sctn-business-plan .companies .column-30 {
+  aspect-ratio: 1;
+}
+main .sctn-business-plan .companies .w-50 {
+  aspect-ratio: 1;
+  display: inline-block;
+} */
