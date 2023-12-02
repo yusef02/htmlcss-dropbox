@@ -1,11 +1,12 @@
 :root {
-  --padding-container: 50px;
+  --base-size: 15px;
 }
 /* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* debug */
@@ -28,44 +29,40 @@
 .wrapper {
   font-size: 0;
 }
-.container-large {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 50px 0;
-  /* debug */
-  /* min-height: 400px; */
-  background-color: lightpink;
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px 0;
-  /* debug */
-  min-height: 400px;
-
-  background-color: lightpink;
 }
-
 .column-30 {
   width: calc(100% / 3);
 }
+.column--small{
+  width: 30%;
+}
+.column--big{
+  width: 70%;
+}
 
 .btn--primary--blue {
+  display: block;
   padding: 7px 14px;
   background-color: #0061ff;
   color: white;
+  text-decoration: none;
 }
 
 .btn--primary--white {
+  display: block;
   padding: 7px 14px;
   background-color: white;
   color: black;
+  text-decoration: none;
 }
 
 /* HEADER */
 
 .header {
+  background-color: white;
   padding: 15px;
 
   display: flex;
@@ -84,11 +81,11 @@
 }
 .header__nav__aboutUs, .header__nav__contacts{
   list-style: none;
-  margin: 0 15px;
+  margin: 0 var(--base-size);
 }
 .header__nav__aboutUs li, .header__nav__contacts li{
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 var(--base-size);
 }
 .header__nav__aboutUs li > a, .header__nav__contacts li > a{
   text-decoration: none;
@@ -97,7 +94,43 @@
 .header__nav__auth__btn {
   display: inline-block;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 var(--base-size);
+}
+
+
+/* JUMBOTRON */
+
+.jumbo{
+  background-color: #9acfe9;
+}
+.jumbo .container{
+  padding-top: 80px;
+}
+.jumbo__headTitle{
+  font-size: 4rem;
+  margin-bottom: 60px;
+}
+.jumbo__content{
+  display: flex;
+}
+.jumbo__content__columnSmall__description{
+  margin-bottom: 30px;
+}
+.jumbo__content__columnSmall__btn{
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.jumbo__content__columnSmall__caption{
+  margin-bottom: 30px;
+  display: block;
+}
+.jumbo__content__columnSmall__icon{
+  display: inline-block;
+  font-size: 3rem;
+}
+.jumbo__content__columnBig{
+  position: relative;
+  top: 70px;
 }
 
 /* 
