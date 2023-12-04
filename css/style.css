@@ -1,5 +1,13 @@
 :root {
+  --primary-color: #0061ff;
   --base-size: 15px;
+  --xs-size: 20px;
+  --s-size: 30px;
+  --m-size: 50px;
+  --l-size: 70px;
+  /* --xl-size: ; */
+  --xxl-size: 100px;
+  --jumbo-img-overflow: 60px
 }
 /* RESET */
 * {
@@ -30,11 +38,8 @@
   font-size: 0;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
-}
-.column-30 {
-  width: calc(100% / 3);
 }
 .column--small{
   width: 30%;
@@ -70,6 +75,7 @@
 
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .header__nav{
   display: flex;
@@ -96,6 +102,10 @@
   text-decoration: none;
   margin: 0 var(--base-size);
 }
+.gray{
+  color: gray;
+}
+
 
 
 /* JUMBOTRON */
@@ -105,13 +115,16 @@
 }
 .jumbo .container{
   padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .jumbo__headTitle{
   font-size: 4rem;
-  margin-bottom: 60px;
+  margin-bottom: var(--jumbo-img-overflow);
 }
 .jumbo__content{
   display: flex;
+  margin-bottom: calc(var(--jumbo-img-overflow) + 50px);
 }
 .jumbo__content__columnSmall__description{
   margin-bottom: 30px;
@@ -130,26 +143,69 @@
 }
 .jumbo__content__columnBig{
   position: relative;
-  top: 70px;
+  top: var(--jumbo-img-overflow);
 }
+
+/* MAIN */
+
+main .sectionPlans .container{
+  padding: 50px 100px;
+}
+.sectionPlans__title{
+  font-size: 2rem;
+  margin-bottom: var(--m-size);
+}
+.sectionPlans__fatturazione{
+  margin-bottom: var(--s-size);
+}
+.sectionPlans__fatturazione label{
+  margin-right: var(--s-size);
+}
+.sectionPlans__businessPlans{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-size);
+}
+.sectionPlans__businessPlans__card{
+  width: calc((100% - (2 * var(--s-size))) / 3);
+  min-width: 200px;
+  min-height: 200px;
+  flex: 1 0;
+
+  border: 1px solid rgb(227, 227, 227);
+}
+.sectionPlans__businessPlans__card span,
+.sectionPlans__businessPlans__card h3,
+.sectionPlans__businessPlans__card hr{
+  display: block;
+  margin-bottom: var(--base-size);
+}
+.sectionPlans__businessPlans__card__businessType{
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+.sectionPlans__businessPlans__card__content{
+  padding: var(--base-size);
+}
+.sectionPlans__businessPlans__card__content__businesstitle{
+  font-size: 1.3rem;
+}
+.sectionPlans__businessPlans__card__content .gray{
+  margin-bottom: var(--m-size);
+}
+.sectionPlans__businessPlans__card__content button{
+  margin-top: var(--m-size);
+  margin-bottom: var(--m-size);
+}
+.sectionPlans__businessPlans__card__content .fa-check{
+  color: var(--primary-color);
+}
+
+
+
 
 /* 
-
-.jumbo .jumbo-content {
-  display: flex;
-}
-.jumbo .jumbo-content .column-small {
-  flex-basis: 30%;
-  min-height: 400px;
-  background-color: lightgrey;
-}
-.jumbo .jumbo-content .column-big {
-  flex-basis: 70%;
-  min-height: 400px;
-  background-color: lightslategrey;
-}
-
-
 
 main .sctn-plans {
   min-height: 700px;
