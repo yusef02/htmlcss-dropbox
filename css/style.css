@@ -42,10 +42,10 @@
   margin: 0 auto;
 }
 .column--small{
-  width: 30%;
+  width: 40%;
 }
 .column--big{
-  width: 70%;
+  width: 60%;
 }
 
 .btn--primary--blue {
@@ -148,6 +148,10 @@
 
 /* MAIN */
 
+
+
+/* SECTION BUSINESS PLANS */
+
 main .sectionPlans .container{
   padding: 50px 100px;
 }
@@ -202,6 +206,29 @@ main .sectionPlans .container{
   color: var(--primary-color);
 }
 
+
+
+/* SECTION PARTNER */
+
+main .sectionPartner .container{
+  padding: 50px 100px;
+  display: flex;
+}
+.sectionPartner__column--small{
+  padding: var(--m-size);
+}
+.sectionPartner__columnSmall__title{
+  font-size: 1.3rem;
+  margin-bottom: var(--xs-size);
+}
+.sectionPartner__columnSmall__desc{
+  margin-bottom: var(--xs-size);
+
+}
+.sectionPartner__columnSmall__btn{
+  display: inline-block;
+  border: 1px solid currentColor;
+}
 
 
 
