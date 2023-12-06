@@ -231,6 +231,36 @@ main .sectionPartner .container{
 }
 
 
+/* SECTION FUNCTIONS */
+
+
+main .sectionFunctions .container{
+  padding: 50px 100px;
+}
+.sectionFunctions__title{
+  font-size: 2rem;
+  margin-bottom: var(--m-size);
+}
+.sectionFunctions__grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-size);
+}
+.sectionFunctions__grid__card{
+  width: calc((100% - (2 * var(--s-size))) / 3);
+  min-width: 200px;
+  flex: 1 0;
+}
+.sectionFunctions__grid__card__title{
+  font-size: 1.3rem;
+  margin-bottom: var(--xs-size);
+}
+
+
+
+
+
+
 
 /* 
 
